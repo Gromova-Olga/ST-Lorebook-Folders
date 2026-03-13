@@ -17,7 +17,7 @@
 1. Откройте SillyTavern.
 2. Перейдите во вкладку **Extensions** (Расширения) -> **Install Extension**.
 3. Вставьте ссылку на этот репозиторий:
-   `https://github.com/ТВОЙ_НИК/ST-Lorebook-Folders`
+https://github.com/Gromova-Olga/ST-Lorebook-Folders
 4. Нажмите **Save & Connect** (или перезагрузите сервер).
 
 ## 📖 Как использовать
