@@ -331,22 +331,22 @@
 /* ====== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ ====== */
 @media screen and (max-width: 800px) {
     #lf-drawer-content {
-        /* Отвязываем панель от верхней строки и жестко фиксируем по центру экрана */
         position: fixed !important;
-        top: 55px !important; /* Отступ от верхнего края */
-        left: 50% !important;
-        transform: translateX(-50%) !important;
+        top: 45px !important; /* Отступ под верхнюю панель Таверны */
+        left: 0 !important;
+        transform: none !important; /* Убираем центрирование */
         
-        /* Делаем ширину почти на весь экран */
-        width: 96vw !important;
-        max-width: 96vw !important;
-        min-width: unset !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        height: calc(100vh - 45px) !important;
+        max-height: calc(100vh - 45px) !important;
         
-        /* Убираем ползунок растягивания (на телефоне он мешает) */
+        border-radius: 0 !important; /* Убираем скругления для полноэкранного вида */
+        border: none !important;
+        border-top: 1px solid var(--SmartThemeBorderColor, #555) !important;
+        
         resize: none !important;
-        
-        /* Ограничиваем высоту, чтобы можно было скроллить саму панель, а не страницу */
-        max-height: 80vh !important;
-        overflow-y: auto !important;
+        z-index: 9999 !important; /* Чтобы панель точно была поверх всего остального */
+        box-sizing: border-box !important;
     }
 }
