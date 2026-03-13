@@ -328,6 +328,147 @@
     padding-left: 4px;
 }
 
+/* ====== БЛОК ДОБАВЛЕНИЯ ЛОРБУКА ====== */
+.lf-inline-add {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 6px;
+    margin-bottom: 4px;
+    background: rgba(0,0,0,0.15);
+    border-radius: 4px;
+}
+
+.lf-add-select {
+    flex: 1;
+    background: var(--SmartThemeHeaderBackground, #222);
+    color: var(--SmartThemeBodyColor, #eee);
+    border: 1px solid var(--SmartThemeBorderColor, #555);
+    border-radius: 3px;
+    padding: 2px 4px;
+    font-size: 0.9em;
+    outline: none;
+}
+
+.lf-inline-add i {
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 3px;
+    transition: background 0.15s;
+}
+
+.lf-inline-add i:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* ====== НОВЫЕ ФИЧИ (Поиск, Компакт, Инлайн-ввод) ====== */
+.lf-controls-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--SmartThemeBorderColor, #555);
+}
+
+#lf-search-input {
+    flex: 1;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid var(--SmartThemeBorderColor, #555);
+    color: var(--SmartThemeBodyColor, #eee);
+    padding: 4px 8px;
+    border-radius: 4px;
+    outline: none;
+}
+
+#lf-compact-toggle {
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid var(--SmartThemeBorderColor, #555);
+    transition: background 0.15s;
+}
+
+#lf-compact-toggle:hover { background: rgba(255,255,255,0.1); }
+#lf-compact-toggle.lf-active { background: #61afef; color: #fff; border-color: #61afef; }
+
+/* ====== ПОДПАПКИ ====== */
+.lf-subfolders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+.lf-folder-contents > .lf-subfolders-list {
+    margin-left: 12px;
+    padding-left: 8px;
+    border-left: 1px solid rgba(255,255,255,0.15);
+}
+
+.lf-btn-add-subfolder {
+    color: #e5c07b; /* Золотистый цвет для отличия */
+}
+
+.lf-btn-add-subfolder:hover {
+    color: #d19a66 !important;
+}
+
+/* Компактный режим */
+.lf-compact-mode .lf-folder-header { padding: 3px 6px; font-size: 0.85em; }
+.lf-compact-mode .lf-folder-actions i { font-size: 0.75em; padding: 1px 3px; }
+.lf-compact-mode .lf-folder-item { border: none; border-bottom: 1px solid rgba(255,255,255,0.05); border-radius: 0; }
+.lf-compact-mode .lf-folder-contents { padding-top: 2px; padding-bottom: 2px; }
+
+/* Инлайн ввод для переименования/создания */
+.lf-inline-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 8px;
+    background: rgba(0,0,0,0.15);
+    border-radius: 4px;
+    margin-bottom: 4px;
+}
+.lf-inline-input {
+    flex: 1;
+    background: var(--SmartThemeHeaderBackground, #222);
+    color: var(--SmartThemeBodyColor, #eee);
+    border: 1px solid var(--SmartThemeBorderColor, #555);
+    border-radius: 3px;
+    padding: 2px 4px;
+    outline: none;
+}
+
+/* ====== ЭКСПОРТ, ИМПОРТ И ЦВЕТА ====== */
+.lf-controls-row i {
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid var(--SmartThemeBorderColor, #555);
+    transition: background 0.15s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lf-controls-row i:hover { background: rgba(255,255,255,0.1); }
+.lf-controls-row i.lf-active { background: #61afef; color: #fff; border-color: #61afef; }
+
+.lf-folder-icon {
+    font-size: 1.1em;
+    margin-right: 4px;
+    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+    transition: color 0.2s;
+}
+
+/* Эффекты при перетаскивании папок */
+.lf-folder-item.lf-drag-source {
+    opacity: 0.4;
+    border: 1px dashed #61afef;
+}
+
 /* ====== АДАПТАЦИЯ ДЛЯ ТЕЛЕФОНОВ ====== */
 @media screen and (max-width: 800px) {
     #lf-drawer-content {
