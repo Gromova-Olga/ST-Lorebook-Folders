@@ -1,11 +1,12 @@
 {
-  "display_name": "Lorebook Folders",
-  "loading_order": 100,
-  "requires": [],
-  "optional": [],
-  "js": "index.js",
-  "css": "style.css",
-  "author": "you",
-  "version": "0.1.0",
-  "homePage": "https://github.com/you/lorebook-folders"
+    "display_name": "ST Lorebook Folders & Binder",
+    "loading_order": 100,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Gromova-Olga",
+    "version": "1.0.0-beta",
+    "homePage": "https://github.com/Gromova-Olga/ST-Lorebook-Folders",
+    "
 }
