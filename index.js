@@ -1,7 +1,7 @@
 import { extension_settings, getContext } from "../../../extensions.js";
 import { saveSettingsDebounced } from "../../../../script.js";
 
-const extensionName = "lorebook-folders";
+const extensionName = "ST-Lorebook-Folders";
 const extensionFolderPath = `scripts/extensions/third-party/${extensionName}`;
 
 let eventSource = null;
