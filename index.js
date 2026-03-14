@@ -412,3 +412,4 @@ jQuery(async () => {
         const sm = await import("../../../../script.js");
         sm.eventSource.on(sm.event_types.CHAT_CHANGED, () => { setTimeout(() => applyBindingsForChat(getCurrentChatId()), 500); });
     } catch (err) { console.error(`[${extensionName}] ❌`, err); }
+});
